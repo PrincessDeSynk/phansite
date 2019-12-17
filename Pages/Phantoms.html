@@ -1,0 +1,103 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+            <link rel="stylesheet" href="../CSS/bootstrap.min.css" type="text/css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="shortcut icon" type="image/x-icon" href="../Images/phantomLogo.png" />
+            <title>Phantom Thieves</title>
+        </head>
+
+
+        <body style="background-color : #000000;">
+            <header class="container-fluid" style ="background-color: #000000;">
+<!--             expandable sticky navbar default color -->
+                <nav class="navbar navbar-expand-md sticky-top " style="background-color: #000000">
+<!--                 logo to display it on all screens-->
+                     <div class="nav-item" style="z-index:20;">
+                            <a class="nav-link pic " href="../index.html"><img src="../Images/phantomLogo.png" alt= "phantom" style="height: 2em;"></a>
+                    </div>
+<!--                    toggle for dropdown on small screens-->
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-image: url(../Images/hamburger.png);height: 2em; background-size: cover">
+                      </button>
+<!--                    menu -->
+                <div class="collapse navbar-collapse justify-content-around" id="collapsibleNavbar">
+                    <ul class="navbar-nav nav-justified mr-auto " style="background-color: #000000;z-index: 20;">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Phantoms.html">Phantoms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Phorum.html">Phorum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./Phan-store.html">PhanStore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Phan-request.html">PhanRequest</a>
+                        </li>
+                    </ul>
+<!--                    logo to float of the right-->
+                        <img class="mt-2 mt-md-0" src="../Images/takeyourheartattempt.png" alt="take your heart" style="height:2em;">
+                    </div>
+                    </nav>            
+            </header>
+            
+            <img class ="img-fluid" src="../Images/Persona5Logo.jpg" style="margin-bottom: 2em;">
+            <section class="container" >
+                <p class="phantom-description">No more deception, hypocrisy and corruption </p>
+                <p class="phantom-description">We are the Phantom Thieves of hearts.   </p>
+            </section>
+            
+<!--            footer container-->
+    <footer class="page-footer container-fluid"  >
+<!--        footer menu container -->
+        <section class="d-flex flex-row justify-content-around flex-wrap " style="position: relative;bottom:-2em;">
+          <a href="./Phantoms.html" class="linkToPage">Phantoms</a>
+          <a href="./Phan-store.html" class="linkToPage">PhanStore</a>
+          <a href="./Phorum.html" class="linkToPage">Phorum</a>
+          <a href="./Phan-request.html" class="linkToPage">Contact us</a>
+        </section>
+<!--        footer trademarks container-->
+        <section class="d-flex flex-row justify-content-around flex-wrap " style=" margin-top: 2.5em;margin-bottom: 2em;">
+            <a href="https://atlus.com/" target="_blank"><img src="../Images/AtlusLogo.png" style="height:2em;position: relative;bottom: -1em;"></a>
+            <a href="https://atlus.com/persona5/"  target="_blank"><img src="../Images/personalogo.png" style="height: 3em;"></a>
+            <a href="https://www.criware.com/en/"  target="_blank"><img src="../Images/criware.png" style="height:4em;"></a>
+            <a href="https://megamitensei.fandom.com/wiki/Metaverse_Navigator"  target="_blank"><img src="../Images/metaverse.png" style="height:4em;"></a>
+        </section>
+                <p class="text-center" style="color: white;font-size: 0.7em;">Persona is a registered trademark for ATLUS</p>
+    </footer>
+<!--bootstrap scripts-->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--            script to sticky positioning the navbar-->
+            <script>
+$(document).ready(function () {
+    var sticky_navigation_offset_top = $('nav').offset().top;
+    var sticky_navigation = function () {
+        var scroll_top = $(window).scrollTop();
+        if (scroll_top > sticky_navigation_offset_top) {
+            $('nav').css({
+                'position': 'fixed',
+                'top': 0,
+                'left': 0,
+                'right': 0,
+                'z-index': 10,
+                'margin-left': 'auto',
+                'margin-right': 'auto'
+            });
+        } else {
+            $('nav').css({
+                'position': 'relative'
+            });
+        }
+    };
+    sticky_navigation();
+    $(window).scroll(function () {
+        sticky_navigation();
+    });
+});
+        </script>
+        </body>
+    </html>

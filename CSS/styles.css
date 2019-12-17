@@ -1,0 +1,129 @@
+/* adding new fonts*/
+@font-face {
+  font-family: personafont;
+  src: url(../Files/earwigfactoryrg-webfont.woff);
+}
+@font-face {
+  font-family: persona-font;
+  src: url(../Files/PersonaNonGrata.woff);
+}
+@font-face {
+  font-family: phanfont;
+  src: url("../Files/PhanFont.woff");
+}
+@font-face {
+    font-family :Garamond;
+    src: url("../Files/Garamond.ttf")
+}
+@font-face {
+    font-family :Candara;
+    src: url("../Files/Candara.ttf");
+}
+/* end of new fonts*/
+
+/*each nav item's size*/
+.nav-item {
+    font-family: phanfont;
+    font-size: 2em;
+}
+/* change the color and background of links when hovered*/
+.nav-link {
+    color : #FF0000;
+}
+.nav-link:hover {
+    color : black;
+    background-color : #FF0000;
+}
+/*to override the logo hover */
+.nav-link.pic:hover {
+    background-color:#000000;
+}
+/* the nav of the active page */
+.nav-link.active{
+    background-color:#FF0000;
+    color:#000000;
+    border-left: 0.1em solid #000000;
+    border-right: 0.1em solid #000000;
+}
+/*gray border to show which box th euser is hovering*/
+.nav-link.active:hover {
+        border-bottom: 0.1em solid #303030;
+}
+/*footer style for all pages*/
+footer {
+    width: 100%;
+    height:20em;
+    bottom : 0 ;
+/*    position: relative;*/
+    
+    background-image: url(../Images/blackandredshape.jpg);
+    background-size: cover;
+/*    background-color : black;*/
+    margin-bottom: 0;
+}
+
+a.linkToPage {
+    font-family: personafont;
+    font-size: 2em;
+    color : #FF0000;
+    text-decoration: none;
+    margin-right: 3%
+
+}
+a.linkToPage:hover {
+    text-decoration: none;
+    color : white ;
+}
+
+h2 {
+    color:#000000;
+    font-family: phanfont;
+    font-size: 5em;
+    margin-bottom: 1em;
+    margin-top:5em;
+    text-align: center;
+
+}
+/* for text under images*/
+.figure-caption p{
+    font-size: 2em;
+    color: #FF0000 ;
+    font-family: comic sans MS;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+h1 {
+    font-size:3em;
+    font-family: phanfont;
+    letter-spacing: 0.1em;
+/*    color : white;*/
+}
+.phorum-header {
+    color : #FF0000;
+}
+.phorum-data {
+    color : white ;
+}
+.phorum-post:hover {
+    transform: translateX(1em);
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+a .phorum-post:hover{
+    text-decoration: none;
+}
+.discussion {
+    color : white ;
+}
+.phantom-description {
+    color : white;
+    font-family: phanfont;
+    font-size : 2em;
+}
+.card-title{
+    font-family: Garamond;
+    font-weight:bold;
+}
+.card-text {
+    font-family: Garamond;
+}
